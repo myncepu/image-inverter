@@ -1,6 +1,7 @@
 'use client'
 
-import React, { useState, useRef } from 'react';
+import type React from 'react';
+import { useState, useRef } from 'react';
 import { Facebook, Twitter, Linkedin, Upload } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 
@@ -64,12 +65,12 @@ const ImageInverter: React.FC = () => {
       <h1 className="text-4xl font-bold text-center mb-2">Invert image (colors)</h1>
       <p className="text-center mb-6 text-gray-600">Free online tool</p>
       
-      <div className="flex justify-center space-x-4 mb-8">
+      {/* <div className="flex justify-center space-x-4 mb-8">
         <Button variant="outline" size="icon" className="rounded-full"><Facebook size={20} /></Button>
         <Button variant="outline" size="icon" className="rounded-full"><Twitter size={20} /></Button>
         <Button variant="outline" size="icon" className="rounded-full">P</Button>
         <Button variant="outline" size="icon" className="rounded-full"><Linkedin size={20} /></Button>
-      </div>
+      </div> */}
 
       <div className="grid grid-cols-2 gap-8 mb-8">
         <div className="bg-white p-4 rounded-lg shadow">
